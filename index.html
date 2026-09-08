@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Demonstração de uma loja on-line criada com HTML, CSS e JavaScript." />
+    <title>VivaShop | Sua loja on-line</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="VivaShop - início"><span>V</span> VivaShop</a>
+      <button class="menu-button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="navigation" aria-label="Navegação principal">
+        <a href="#produtos">Produtos</a><a href="#sobre">Sobre o projeto</a><a href="#contato">Contato</a>
+      </nav>
+      <button class="cart-button" aria-label="Abrir carrinho">Sacola <strong data-cart-count>0</strong></button>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Design que acompanha você</p>
+          <h1>Pequenos itens.<br /><em>Grandes</em> escolhas.</h1>
+          <p class="hero-text">Uma seleção especial para deixar sua rotina mais leve, bonita e funcional.</p>
+          <a class="button button-dark" href="#produtos">Explorar coleção <span>→</span></a>
+          <div class="hero-details"><span>Frete grátis acima de R$ 199</span><span>Compra segura</span></div>
+        </div>
+        <div class="hero-art" aria-label="Ilustração decorativa de produtos para casa">
+          <div class="sun"></div><div class="arch"></div><div class="vase"><i></i></div><div class="plant"><b></b><b></b><b></b><b></b><b></b></div><div class="orb"></div>
+          <p>NOVA<br />COLEÇÃO<br /><small>2026</small></p>
+        </div>
+      </section>
+
+      <section class="benefits" aria-label="Vantagens da loja">
+        <p><span>✦</span> Curadoria com propósito</p><p><span>✦</span> Entrega para todo o Brasil</p><p><span>✦</span> Pagamento descomplicado</p>
+      </section>
+
+      <section class="products" id="produtos">
+        <div class="section-heading"><div><p class="eyebrow">Escolhas da semana</p><h2>Feitos para o seu dia</h2></div><button class="filter-button" aria-label="Filtrar produtos">Filtrar <span>⌄</span></button></div>
+        <div class="product-grid" id="product-grid"></div>
+      </section>
+
+      <section class="project-info" id="sobre">
+        <div><p class="eyebrow">Projeto educacional</p><h2>Uma vitrine pronta<br />para apresentar.</h2></div>
+        <div class="info-copy"><p>Esta página é uma demonstração de vendas on-line desenvolvida com <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Ela apresenta produtos, permite adicionar itens à sacola e se adapta a celulares e computadores.</p><a href="https://www.eclipse.org/downloads/" target="_blank" rel="noreferrer">Baixar o Eclipse IDE <span>↗</span></a></div>
+      </section>
+    </main>
+
+    <footer id="contato"><a class="brand" href="#inicio"><span>V</span> VivaShop</a><p>Projeto para demonstração de vendas on-line.</p><p>© <span id="year"></span> VivaShop</p></footer>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
